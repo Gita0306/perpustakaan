@@ -50,11 +50,12 @@ class BookResource extends Resource
         return $table
             ->columns([
                 //
-                ImageColumn::make('image')->label('Book picture')->alignCenter(),
+                // ImageColumn::make('image')->label('Book picture')->alignCenter(),
                 TextColumn::make('title'),
                 TextColumn::make('author'),
                 TextColumn::make('publisher'),
                 TextColumn::make('isbn'),
+                 ImageColumn::make('Image')->label('Book picture')->alignCenter(),
                 // TextColumn::make('stock'),
 
             ])

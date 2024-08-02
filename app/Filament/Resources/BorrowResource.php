@@ -32,6 +32,7 @@ class BorrowResource extends Resource
                     )
                     ->searchable(),
                 Forms\Components\Select::make('user')
+                        ->searchable()
                     ->options(
                         \app\Models\User::all()->pluck('name', 'name')
                     ),
